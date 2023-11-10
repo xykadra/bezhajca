@@ -1,0 +1,216 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(13, 29, 29);
+}
+
+h1{
+  color: #1a4932;
+  text-align: right;
+  margin-right: 35px;
+}
+
+h2{
+  color: #ffffff;
+  text-align: left;
+}
+
+
+.topnav {
+  background-color: rgb(13, 29, 29);
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s; /* Add transition properties */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition properties */
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: rgb(13, 29, 29);
+  color: rgb(123, 110, 110);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  border: 3px solid #555;
+  width: 100%;
+}
+
+
+
+
+
+.slider-wrapper {
+  background: rgb(13, 29, 29);
+  padding:0;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.slider {
+  width: 100vw;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+}
+
+.slide > img {
+  width: 25%;
+  border-radius: 5px;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+}
+
+.arrow-left {
+  left: 10px;
+  top: 50%;
+  bottom:50%;
+  margin-left: 15px;
+  transform: translateY(-50%, -50%);
+ 
+}
+
+.arrow-right {
+  right: 10px;
+  top: 50%;
+  bottom:50%;
+  margin-right: 15px;
+  
+  transform: translateY(-50%, -50%);
+}
+
+
+.categories{
+  margin-top: 30px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center; /* Center-align the content horizontally */
+  align-items: center; /
+
+}
+
+.cat{
+margin-right: 100px;
+}
+
+.buy{
+  /* margin-top: 30px; */
+  background-color: #fef6f6;
+  display: flex;
+  justify-content: center; /* Center-align the content horizontally */
+  align-items: center; /
+}
+
+
+.categoriesImage{
+  display: inline-block;
+  margin: 0 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 15%;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.categoriesImage:hover{
+  transform: scale(2.1);
+}
+
+
+.calendar{
+  display: inline-block;
+  margin: 0 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 15%;
+  border-radius: 5px;
+  transition: transform 0.3s;
+
+}
+
+.calendar:hover{
+  transform: scale(1.0);
+}
+
+.go-to-shop-container {
+  background-color: #000000; /* Red background color */
+  color: #fff; /* White text color */
+  padding: 20px;
+  border-radius: 5px; /* Apply border radius */
+  cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+  transition: transform 0.3s, background-color 0.3s;
+
+  
+}
+
+.go-to-shop-container:hover{
+  transform: scale(1.1);
+  background-color: #f40e0e;
+}
+
+
