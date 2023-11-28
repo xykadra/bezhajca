@@ -33,3 +33,50 @@ function myFunction() {
     }
    });
  });
+
+
+function toggleBorder(image) {
+  image.classList.toggle('selected');
+  
+}
+
+function toggleBorder(image, galleryId) {
+  const counter = document.getElementById('heart-counter');
+  const globalCounter = parseInt(counter.textContent);
+
+  const imageElement = image;
+  const gallery = document.getElementById(galleryId);
+
+  if (imageElement.classList.contains('selected')) {
+      imageElement.classList.remove('selected');
+      counter.textContent = globalCounter - 1;
+  } else {
+      imageElement.classList.add('selected');
+      counter.textContent = globalCounter + 1;
+  }
+}
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+
+
+//show hide heart and counter
+window.onscroll = function() {
+  const backToTopButton = document.querySelector('.hearth-icon');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backToTopButton.style.display = 'block';
+  } else {
+      backToTopButton.style.display = 'none';
+  }
+};
+// Show/hide back-to-top button based on scroll position
+window.onscroll = function() {
+  const backToTopButton = document.querySelector('.back-to-top');
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopButton.style.display = 'block';
+  } else {
+      backToTopButton.style.display = 'none';
+  }
+};

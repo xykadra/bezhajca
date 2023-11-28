@@ -23,7 +23,7 @@ h2{
 
 
 .topnav {
-  background-color: rgb(13, 29, 29);
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
   transition: background-color 0.3s, color 0.3s; 
 }
@@ -86,7 +86,7 @@ h2{
 }
 
 img {
-  border: 3px solid #555;
+  /* border: 3px solid #555; */
   width: 100%;
 }
 
@@ -170,8 +170,20 @@ img {
 }
 
 .cat{
-margin-right: 100px;
+font-size: 60px;
+margin-left: 20px;
 }
+
+.gallery-text{
+font-size: 30px;
+margin-left: 20px;
+}
+
+.text-next-to-categories-container{
+ margin: 0px;
+ padding: 60px;
+}
+
 
 .buy{
   /* margin-top: 30px; */
@@ -237,7 +249,7 @@ margin-right: 100px;
 
 /* Stye for contac me page */
 
-.image-container{
+.image-container-artistinfo{
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -246,12 +258,14 @@ margin-right: 100px;
 
 
 .imageMufa{
-  width: 30%;
+  width: 25%;
 }
 
 .contacth1{
-  margin-left: 20px;
+  font-size: 60px;
+  margin-left: 70px; 
   color: white;
+  
 }
 
 
@@ -300,7 +314,7 @@ align-items: center;
  background-color: black;
 }
 
-putovanje kroz svemir je bas cudno ali se mora nekada desiti i to je to, danas sam ostao i sutra idem i tjt nema me dugo
+
 .bezhajcaSocialMediaLinks{
  text-decoration: none;
  margin-left: 20px;
@@ -416,4 +430,100 @@ justify-content: center;
   align-items: center;
 }
 
+.image-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
 
+.categoriesImage {
+  display: block;
+  width: 60%;
+  height: auto;
+  transition: transform 0.5s; /* Transition for scaling effect */
+}
+
+.image-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for text */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s; /* Transition for fading effect */
+}
+
+.image-container:hover .categoriesImage {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.image-container:hover .image-info {
+  opacity: 1; /* Show the info text on hover */
+}
+
+
+
+.gallery {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 10px; */
+  /* padding-left: 100px;
+  padding-top: 50px; */
+  justify-content: space-around; /* Horizontal space around the images */
+  align-content: space-around; /* Vertical space around the images */
+}
+
+.gallery img {
+
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(14, 14, 14, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.gallery img.selected {
+  border: 2px solid white;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.hearth-counter{
+  height: 30px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heart-container {
+  background-color: white;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.heart-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}

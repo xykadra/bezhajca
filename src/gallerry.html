@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./style.css" type="text/css"/>
+<title>bezhajca</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<link rel="icon" href="assets/icon3.ico">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="src/script.js"></script>
+</head>
+<body>
+   
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a class="active"href="#gallery">Gallery</a>
+        <a  href="artistInfo.html">Artist Info</a>
+        <a  href="contact.html">Contact</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+    
+   
+    
+    <div class="gallery" id="gallery1">
+
+        <img src="assets/dzejna-portrait.jpg" alt="Image 1" onclick="toggleBorder(this, 'gallery1')">
+        <img src="assets/somewhere-blackWhite-sky.jpg" alt="" onclick="toggleBorder(this, 'gallery1')">
+        <img src="assets/sarajevo2-sky.jpg" alt="Image 3" onclick="toggleBorder(this, 'gallery1')">
+
+    </div>
+
+    <div class="gallery" id="gallery2">
+
+        <img src="assets/mosaic1.jpg" alt="" onclick="toggleBorder(this, 'gallery2')">
+        <img src="assets/sarajevo-sky.jpg" alt="" onclick="toggleBorder(this, 'gallery2')">
+        <img src="assets/girl1-portrait.jpg" alt="" onclick="toggleBorder(this, 'gallery2')">
+
+    </div>
+
+    <div class="gallery" id="gallery3">
+
+        <img src="assets/penny-sky.jpg" alt=""onclick="toggleBorder(this, 'gallery3')">
+        <img src="assets/bezhajca1.jpg" alt="Image 2" onclick="toggleBorder(this, 'gallery3')">
+        <img src="assets/sarajevo2-sky.jpg" alt="" onclick="toggleBorder(this, 'gallery3')">
+
+    </div>
+
+    <div class="gallery" id="gallery4">
+
+        <img src="assets/dzejna-portrait.jpg" alt="Image 1" onclick="toggleBorder(this, 'gallery4')">
+        <img src="assets/girl2-portrait.jpg" alt="Image 2" onclick="toggleBorder(this, 'gallery4')">
+        <img src="assets/sarajevo2-sky.jpg" alt="Image 3"  onclick="toggleBorder(this, 'gallery4')">
+
+    </div>
+
+    <div class="gallery" id="gallery5">
+
+        <img src="assets/bezhajca2.jpg" alt="Image 1" onclick="toggleBorder(this, 'gallery5')">
+        <img src="assets/mufa-no1.jpg" alt="Image 2"  onclick="toggleBorder(this, 'gallery5')">
+        <img src="assets/somewhere-club.jpg" alt="Image 3"  onclick="toggleBorder(this, 'gallery5')">
+
+    </div>
+<div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+<div class="heart-container">
+    <img class="heart-icon" src="assets/heart.webp" alt="Heart">
+    <span id="heart-counter">0</span>
+</div>
+<script src="script.js"></script>
+ 
+   
+   
+  
+
+
+
+
+
+   
+</body>
+</html>
