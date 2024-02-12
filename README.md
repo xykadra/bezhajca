@@ -6,13 +6,13 @@ Welcome to the BezHajca Photography Gallery, a platform where artist BezHajca sh
 <img width="200" alt="Screenshot 2024-02-12 at 01 45 13" src="https://github.com/xykadra/bezhajca/assets/83673916/5fec90c7-0709-4d0c-bfc1-c38678d83b74">
 
 <!-- Image 2 -->
-<img width="200" alt="Screenshot 2024-02-12 at 01 45 13" src="https://github.com/xykadra/bezhajca/assets/83673916/938d5ba8-efbe-4c7c-a019-e9e295bb31bb">
+<img width="500" alt="Screenshot 2024-02-12 at 01 45 13" src="https://github.com/xykadra/bezhajca/assets/83673916/938d5ba8-efbe-4c7c-a019-e9e295bb31bb">
 
 <!-- Image 3 -->
-<img width="200" alt="Screenshot 2024-02-12 at 01 45 49" src="https://github.com/xykadra/bezhajca/assets/83673916/d7dc911d-eff9-431c-8d30-72b8bb0020e2">
+<img width="500" alt="Screenshot 2024-02-12 at 01 45 49" src="https://github.com/xykadra/bezhajca/assets/83673916/d7dc911d-eff9-431c-8d30-72b8bb0020e2">
 
 <!-- Image 4 -->
-<img width="200" alt="Screenshot 2024-02-12 at 01 46 19" src="https://github.com/xykadra/bezhajca/assets/83673916/59e2173e-5b40-46f7-882c-6125e51aadaa">
+<img width="500" alt="Screenshot 2024-02-12 at 01 46 19" src="https://github.com/xykadra/bezhajca/assets/83673916/59e2173e-5b40-46f7-882c-6125e51aadaa">
 
 ## Table of Contents
 - [About the Artist](#about-the-artist)
@@ -34,7 +34,7 @@ Express your appreciation for BezHajca's work by liking your favorite images. Si
 
 ## Contact Information
 
-Have questions, feedback, or inquiries? Connect with BezHajca directly. Reach out via email at [bezhajca@email.com](mailto:bezhajca@email.com) or through social media:
+Have questions, feedback, or inquiries? Connect with BezHajca directly.Or through social media:
 
 - [Instagram](https://www.instagram.com/bezhajca)
 
